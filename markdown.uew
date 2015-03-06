@@ -1,0 +1,12 @@
+/L20"Markdown"  EnableSpellasYouType String Chars = " Nocase Line Comment Valid Columns = [0-1] Line Comment Valid Columns Alt = [0-1] Line Comment Num = 4     Line Comment Alt = >  File Extensions = MD
+/Delimiters = #^p!"tab$%&'()*+,-./:;<=>?@[\]^_{|}~
+/Marker Characters = "##``[)"
+/C1"Color Group 1"
+/C2"Color Group 2"
+-
+##
+/C3"Color Group 3"
+=
+/C4"Color Group 4"
+``
+/C5"Color Group 5"
