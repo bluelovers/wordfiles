@@ -1,4 +1,4 @@
-/L20"XML" XML_LANG Noquote Block Comment On = <!-- Block Comment Off = --> File Extensions = XML XUL XSD XSL XSLT WSDL CONFIG SSS
+/L20"XML" XML_LANG Noquote Block Comment On = <!-- Block Comment Off = --> File Extensions = XML XUL XSD XSL XSLT WSDL CONFIG SSS RDF
 /Delimiters = ~@$%^&*( )+=|\{};"'<>	,
 /Function String = "name=*">"
 /Open Brace Strings =  "{" "(" "[" "<"
