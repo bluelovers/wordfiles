@@ -1,0 +1,12 @@
+/L20"Document Type Definition (DTD)"  EnableSpellasYouType String Chars = " File Extensions = DTD
+/Function String = "<!ENTITY ^(*^) "
+/Delimiters = ~!@%^&*()-+=|\/{}[]:;"'<> ,	.?
+/C1"Elements" STYLE_ELEMENT
+// />
+>
+<
+/C2"ENTITY" STYLE_KEYWORD
+!ENTITY
+/C3"Operators" STYLE_KEYWORD
+"
+.
