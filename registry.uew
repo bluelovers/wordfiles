@@ -1,4 +1,4 @@
-/L20"Registry" String Chars = " Escape Char = \ DisableMLS File Extensions = REG
+/L20"Registry" Line Comment = [ Line Comment Valid Columns = [1] String Chars = " Escape Char = \ EnableMLS File Extensions = REG
 /Delimiters = " (),:=[]
 /Open Brace Strings = "(" "["
 /Close Brace Strings = ")" "]"
@@ -24,7 +24,5 @@ Windows
 ]
 /C4"Hex. Bytes"
 ** a b c d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 da db dc dd de df e f
-/C5"Registry Keys"
-[]
 /C5"Registry Keys"
 []
