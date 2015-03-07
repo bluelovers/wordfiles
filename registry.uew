@@ -1,11 +1,18 @@
-/L20"Registry" Line Comment = [ Line Comment Valid Columns = [1] String Chars = " Escape Char = \ EnableMLS File Extensions = REG
-/Delimiters = " (),:=[]
+/L20"Registry" Line Comment = ; String Chars = " Escape Char = \ EnableMLS File Extensions = REG
+/Delimiters = ~!@%^&*()-+=|\/{}[]:;"'<> ,	.?
 /Open Brace Strings = "(" "["
 /Close Brace Strings = ")" "]"
 /Open Fold Strings = "["
 /Close Fold Strings = "["
 /Ignore Fold Strings = "="
 /Marker Characters = "[]"
+/Regexp Type = Perl
+/TGBegin "Delete Registry Keys"
+/TGFindStr = "^\[(\-[^\[\]\-]+)\]"
+/TGEnd
+/TGBegin "Registry Keys"
+/TGFindStr = "^\[(?!\-)([^\[\]\-]+)\]"
+/TGEnd
 /C1"Header"
 Editor
 REGEDIT4 Registry
@@ -13,6 +20,7 @@ Version
 Windows
 /C2"Default Value"
 @
+@=
 /C3"Separators"
 (
 )
@@ -22,7 +30,36 @@ Windows
 [
 \
 ]
-/C4"Hex. Bytes"
+{
+}
+.
+\\ \
+*
+-
+/C4"Hex. Bytes" STYLE_KEYWORD
 ** a b c d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 da db dc dd de df e f
+** 00 01 02 03 04 05 06 07 08 09
+** 0a 0b 0c 0d 0e 0f
+** 1a 1b 1c 1d 1e 1f
+** 2a 2b 2c 2d 2e 2f
+** 3a 3b 3c 3d 3e 3f
+** 4a 4b 4c 4d 4e 4f
+** 5a 5b 5c 5d 5e 5f
+** 6a 6b 6c 6d 6e 6f
+** 7a 7b 7c 7d 7e 7f
+** 8a 8b 8c 8d 8e 8f
+** 9a 9b 9c 9d 9e 9f
+00000000
 /C5"Registry Keys"
 []
+/C6"Delete Registry Keys" STYLE_OPERATOR
+** [-
+/C7"Keywords" STYLE_KEYWORD
+HKEY_LOCAL_MACHINE HKLM
+HKEY_CURRENT_CONFIG HKCC
+HKEY_CLASSES_ROOT HKCR
+HKEY_USERS HKU
+HKEY_CURRENT_USER HKCU
+HKEY_PERFORMANCE_DATA
+HKEY_DYN_DATA
+/C8"Operators" STYLE_OPERATOR
