@@ -1,5 +1,5 @@
 /L20"Registry" String Chars = " Escape Char = \ DisableMLS File Extensions = REG
-/Delimiters = " ():=[]
+/Delimiters = " (),:=[]
 /Open Brace Strings = "(" "["
 /Close Brace Strings = ")" "]"
 /Open Fold Strings = "["
