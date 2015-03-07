@@ -3,7 +3,8 @@
 /Indent Strings = "{("
 /Unindent Strings = "})"
 /Function String = "%[a-zA-Z_]*("
-/C1
+/Marker Characters = "#!"
+/C1"Keywords" STYLE_KEYWORD
 '
 {
 }
@@ -22,6 +23,8 @@ set
 then
 unalias unset
 while
+/
+bin
 /C2
 halt
 ifconfig init initlog insmod
@@ -49,7 +52,7 @@ sed sleep
 test touch
 ulimit uname usleep
 zcat zless
-git
+cd
 /C4
 `
 -a -b -c -d -e -f -g -h -i -j -k -l -m -n -o -p -q -r -s -t -u -v -w -x -z
@@ -57,4 +60,44 @@ git
 -eq -ge -gt -le -lt
 =
 !=
-
+/C6"Command"
+git
+make
+clear
+/C7"Sub Command"
+submodule
+pull
+foreach
+checkout
+fetch
+/C8"Arguments"
+origin
+master
+-h
+/C9"Operators" STYLE_OPERATOR
+$
+&
+*
++
+-
+// /
+<
+=
+>
+?
+|
+/C10"Separators" STYLE_OPERATOR
+'
+(
+)
+,
+:
+;
+[
+]
+^
+`
+{
+}
+/C11"Bash Script" STYLE_KEYWORD
+** #!
