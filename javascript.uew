@@ -186,6 +186,7 @@ defineProperties
 writable
 enumerable
 configurable
+nsIDOMCSSRule
 
 currentTarget
 data
@@ -480,3 +481,10 @@ isArray
 :target
 :text
 :visible
+
+/C10"Const" STYLE_KEYWORD
+
+IMPORT_RULE
+FONT_FACE_RULE
+MEDIA_RULE
+STYLE_RULE
