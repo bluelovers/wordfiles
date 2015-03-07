@@ -1,0 +1,26 @@
+/L20"Registry" String Chars = " Escape Char = \ DisableMLS File Extensions = REG
+/Delimiters = " ():=[]
+/Open Brace Strings = "(" "["
+/Close Brace Strings = ")" "]"
+/Open Fold Strings = "["
+/Close Fold Strings = "["
+/Ignore Fold Strings = "="
+/Marker Characters = "[]"
+/C1"Header"
+Editor
+REGEDIT4 Registry
+Version
+Windows
+/C2"Default Value"
+@
+/C3"Separators"
+(
+)
+:
+= =dword =hex
+[
+]
+/C4"Hex. Bytes"
+** a b c d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 da db dc dd de df e f
+/C5"Registry Keys"
+[]
