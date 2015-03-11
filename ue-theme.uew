@@ -2,7 +2,7 @@
 /Delimiters = ~@$^&*( )+=|\{};"'<>	,
 /Regexp Type = Perl
 /TGBegin "Window"
-/TGFindStr = "<(Window|Editor|Languages)[ \t\/]?>"
+/TGFindStr = "<(Window|Editor|Languages)[\s\t\/>]"
 /TGEnd
 /TGBegin "Font"
 /TGFindStr = "[ \t\n]*\<Font[ \t\n]+Category=\"([^\"]+)\""
