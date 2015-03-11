@@ -1,0 +1,224 @@
+/L6"XUL Firefox Overlay" XML_LANG Noquote Block Comment On = <!-- Block Comment Off = --> Escape Char = \ String Chars = '" File Extensions = XUL
+/Delimiters = ~@$%^&*( )+=|\{};.:"'<>	,
+/Regexp Type = Perl
+/TGBegin "Overlay"
+/TGFindStr = "<(overlay|toolbarbutton|popupset|tree|toolbar|toolbarbutton|statusbar|grid|hbox|window)[\s\t\/>]"
+/TGEnd
+/TGBegin "ENTITY"
+/TGFindStr = "<!(ENTITY)\s+%\s*([\S]+)"
+/TGFindStr = "<!(ENTITY)[\s\t\/>]"
+/TGFindStr = "(%[^;%]+);"
+/TGEnd
+/TGBegin "Script"
+/TGFindStr = "<(script)[^\>]+src=\"[^\"]*\/([^\/\"]+)\""
+/TGFindStr = "<(script)[^\>]+src=\"([^\"]*)\""
+/TGFindStr = "<(script)[\s\t\/>]"
+/TGEnd
+/TGBegin "Keyset"
+/TGFindStr = "<(keyset)[\s\t\/>]"
+/TGFindStr = "<(key)[^\>]+keycode=\"([^\"]*)\""
+/TGEnd
+/TGBegin "Persist"
+/TGFindStr = "<(\w+)\s*[^>]*persist=\"([^\"]*)\""
+/TGEnd
+/TGBegin "Variable"
+/TGFindStr = "&([^;&]+);"
+/TGEnd
+/TGBegin "Properties"
+/TGFindStr = "properties=\"([^\"]*)\""
+/TGEnd
+/Open Brace Strings =  "{" "(" "[" "<"
+/Close Brace Strings = "}" ")" "]" ">"
+/C1"Elements" STYLE_ELEMENT
+** <
+// />
+>
+<
+<%
+%>
+?>
+<? <?xml
+/C2"Attributes" STYLE_ATTRIBUTE
+24hour
+NSDef
+SrcDef
+TEI TEIForm
+abbr absolute action active adj adjFrom adjTo afiicode age agent align alink all allusion
+alt am ana ancestor anchored arity assertedValue attribute authority
+background-color background baseForm baseType behavior below bgcolor border
+calendar cap cause cellpadding cellspacing cert certainty character chars children class
+classid clear code codebase codedCharSet color cols colspan complete composite content-role
+content coords copyOf corr corresp crdate creator
+data date dateCreated dateUpdated day decls default definition degree delim depPtr depend
+desc descendant descriptive dim dir direct direction discrete doc doctype domains dt:type
+dt:values dur
+ed encoding end-indent end enjamb entity entityLoc entitySet entityStd eol evaluate event
+exact excl exclude expan expand extendTarg extent
+fVal face feats feature field-width first-line-start-indent first follow following
+font-family-name font-family font-posture font-size font-style font-weight for form frameborder
+framespacing from fsd full function
+gi given gradual group grpPtr
+h hand has-value height hidden hour href hspace http-equiv
+id ident image inDegree included index ink inline inst interval ismap iso639 iterated
+key
+label2 label lang language left-margin lemma length level1 level2 level3 level4 level lexpunc
+line-spacing lines link loc location locus loop
+macro mailto margin-bottom margin-left margin-top marginheight marginwidth marker marks
+maxOccurs mergedin met method minOccurs mlang mode multiple mutExcl mutual
+n name names new next nohref none noresize norm noshade notation
+occurs old opt ord
+order org orig origin outDegree
+padding parent part passive pattern per perf place pm position prefix prev previous prompt
+quadding
+real reason refunit reg rel rend render required resp result rev rhyme right-margin role
+rows rowspan
+sameAs sample scheme scope scribe script scrolling select selected sex shape show sic sigil
+since size social some sort source space-after space-before space span split src standalone
+start start-indent start status string style subtype synch
+targFunc targOrder targType target targetEnd targets terminal text-align text theme time
+timezone title to token topmargin trans type
+ucs-4 uniform unit url usage use
+valign value valueTo varSeq version vlink vspace
+weights where who width wit wscale wsd
+xl-role xl-title xml:link xmlns xmlns:cmi xmlns:dt
+zone
+
+
+type
+overlay
+SYSTEM
+version
+label
+nodelay
+tabscrolling
+accesskey
+flex
+datasources
+ref
+flags
+primary
+hideheader
+autocheck
+window
+readonly
+/C3"Attributes 2" STYLE_ATTRIBUTE
+keycode
+href
+src
+id
+class
+oncommand
+onmouseover
+onpopupshowing
+onclick
+** on
+persist
+autocompletesearch
+autocompletesearchparam
+enablehistory
+popup
+searchtype
+properties
+tooltiptext
+windowtype
+/C4"Operators" STYLE_OPERATOR
+!
+$
+%
+&
+*
++
+-
+// / \/
+:
+<
+=
+>
+?
+[
+]
+^
+|
+~
+.
+"
+// "
+'
+.
+;
+(
+)
+/C5"" STYLE_KEYWORD
+chrome:
+chrome
+rdf:
+rdf
+nav-bar
+/C6"Variables" STYLE_KEYWORD
+null
+radio
+fulltext
+true
+false
+checkbox
+autocomplete
+/C7"Elements 2" STYLE_ELEMENT
+<overlay
+</overlay>
+]]>
+<![CDATA[
+<toolbarbutton
+</toolbarbutton>
+<menupopup
+</menupopup>
+<template>
+<template
+</template>
+<rule
+</rule>
+<toolbar
+</toolbar>
+<textbox
+</textbox>
+<popupset
+</popupset>
+<menu
+</menu>
+<keyset
+</keyset>
+<script
+</script>
+<menupopup>
+<menupopup
+</menupopup>
+<tree
+</tree>
+<treecols
+</treecols>
+<treechildren
+</treechildren>
+<treeitem
+</treeitem>
+<treerow>
+<treerow
+</treerow>
+<tree
+</tree>
+<menuseparator
+<statusbar
+</statusbar>
+<hbox
+</hbox>
+<hbox>
+<vbox
+</vbox>
+<vbox>
+<menulist
+</menulist>
+<window
+</window>
+<browser
+<spacer
+/C8"Const" STYLE_KEYWORD
+** VK_
+<treecols>
