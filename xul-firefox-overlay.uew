@@ -101,6 +101,11 @@ hideheader
 autocheck
 window
 readonly
+enableColumnDrag
+seltype
+context
+editable
+autostretch
 /C3"Attributes 2" STYLE_ATTRIBUTE
 keycode
 href
