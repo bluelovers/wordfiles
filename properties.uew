@@ -1,0 +1,11 @@
+/L20"Property Files"  EnableSpellasYouType Line Comment = #  File Extensions = PROPERTIES
+/Delimiters = ~@$%^&*( )+=|\{};.:"'/<>	,
+/Regexp Type = Perl
+/TGBegin "Property"
+/TGFindStr = "^([^=]+)="
+/TGEnd
+/Variable String = "^([^=]+)=(.+)$"
+/C1"Operators" STYLE_OPERATOR
+=
+/C1"Variables" STYLE_KEYWORD
+** %
