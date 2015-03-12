@@ -1,21 +1,25 @@
 /L6"XUL Firefox Overlay" XML_LANG Noquote Block Comment On = <!-- Block Comment Off = --> Escape Char = \ String Chars = '" File Extensions = XUL
 /Delimiters = ~@$%^&*( )+=|\{};.:"'<>	,
 /Regexp Type = Perl
-/TGBegin "Overlay"
-/TGFindStr = "<(overlay|toolbarbutton|popupset|tree|toolbar|toolbarbutton|statusbar|grid|hbox|window)[\s\t\/>]"
-/TGEnd
 /TGBegin "ENTITY"
 /TGFindStr = "<!(ENTITY)\s+%\s*([\S]+)"
 /TGFindStr = "<!(ENTITY)[\s\t\/>]"
 /TGFindStr = "(%[^;%]+);"
+/TGEnd
+/TGBegin "Property Files"
+/TGFindStr = "<(stringbundleset)[^\>]+(?:id=\"([^\"]*)\")?"
+/TGFindStr = "<(stringbundle)[^\>]+(?:id=\"([^\"]*)\")?"
 /TGEnd
 /TGBegin "Script"
 /TGFindStr = "<(script)[^\>]+src=\"[^\"]*\/([^\/\"]+)\""
 /TGFindStr = "<(script)[^\>]+src=\"([^\"]*)\""
 /TGFindStr = "<(script)[\s\t\/>]"
 /TGEnd
+/TGBegin "Overlay"
+/TGFindStr = "<(overlay|toolbarbutton|popupset|tree|toolbar|toolbarbutton|statusbar|grid|hbox|window|wizardpage|wizard|tabbox|statusbar|toolbarpalette|popup|menupopup|menubar|broadcasterset)[\s\t\/>](?:[^\<\>]*id=\"([^\"]*)\")?"
+/TGEnd
 /TGBegin "Keyset"
-/TGFindStr = "<(keyset)[\s\t\/>]"
+/TGFindStr = "<(keyset)[\s\t\/>](?:[^\<\>]*id=\"([^\"]*)\")?"
 /TGFindStr = "<(key)[^\>]+keycode=\"([^\"]*)\""
 /TGEnd
 /TGBegin "Persist"
@@ -29,6 +33,8 @@
 /TGEnd
 /Open Brace Strings =  "{" "(" "[" "<"
 /Close Brace Strings = "}" ")" "]" ">"
+/Open Fold Strings = "["
+/Close Fold Strings = "]"
 /C1"Elements" STYLE_ELEMENT
 ** <
 // />
@@ -224,6 +230,20 @@ autocomplete
 </window>
 <browser
 <spacer
+<treecols>
+<broadcasterset
+</broadcasterset>
+<menubar
+</menubar>
+<popup
+</popup>
+<toolbarpalette
+</toolbarpalette>
+<statusbarpanel
+</statusbarpanel>
 /C8"Const" STYLE_KEYWORD
 ** VK_
-<treecols>
+/C9"Elements Localization (L10n)" STYLE_ELEMENT
+<!ENTITY
+<stringbundleset
+</stringbundleset>
