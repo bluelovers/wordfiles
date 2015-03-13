@@ -7,8 +7,14 @@
 /TGBegin "Use Declarations"
 /TGFindStr = "^[ \t]*use[ \t]+((?!constant)[a-z0-9_:]+)"
 /TGEnd
+/TGBegin "require"
+/TGFindStr = "^[ \t]*require\s+[\"\']?([^\"\']+)[\"\']?"
+/TGEnd
 /TGBegin "Const"
 /TGFindStr = "^\s*use\s+constant\s+([\w]+)\s*=>"
+/TGEnd
+/TGBegin "EXPORT"
+/TGFindStr = "^\s*(@EXPORT(?:_OK)?)\s+"
 /TGEnd
 /TGBegin "Globl Variables"
 /TGFindStr = "^\s*our\s+([\$%@\*][\w]+)\s*"
@@ -73,7 +79,7 @@ usleep
 gettimeofday
 mktime
 ctime
-/C3"Methods" STYLE_METHOD
+/C3"Methods" STYLE_KEYWORD
 AUTOLOAD
 BEGIN
 CHECK CLEAR CLOSE CORE
@@ -107,6 +113,8 @@ warnings
 
 STDERR
 FILE
+@EXPORT_OK
+@EXPORT
 /C4"Operators" STYLE_OPERATOR
 !
 &
@@ -134,6 +142,7 @@ y
 |
 ~
 :
+->
 /C5"CGI Funcs"
 Accept
 CGI Carp
