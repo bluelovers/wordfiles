@@ -1,6 +1,9 @@
 /L5"Perl" PERL_LANG EnableMLS Line Comment = # Line Comment Preceding Chars = [~[^]^^$/\(] Block Comment On = =pod Block Comment Off = =cut Block Comment On Alt = =item Block Comment Off Alt = =cut String Chars = "'` Escape Char = \ File Extensions = CGI PL PM PLX
 /Delimiters = ~!@$%^&*()+=|\/{}[]:;"'<> 	,.?\`/
 /Regexp Type = Perl
+/TGBegin "Package"
+/TGFindStr = "^[ \t]*package[ \t]+([\w\d]+)"
+/TGEnd
 /TGBegin "Use Declarations"
 /TGFindStr = "^[ \t]*use[ \t]+((?!constant)[a-z0-9_:]+)"
 /TGEnd
@@ -177,6 +180,7 @@ prepare
 /C9"execute" Colors = 16711680 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
 \`\`
 `
+// `
 /C10"Object"
 Time
 HiRes
