@@ -6,6 +6,9 @@
 /TGBegin "Includes"
 /TGFindStr = "^[\t ]*include(?:_once)*[\t "']+([0-9a-z$&*\-./:=?\\^_]+)["']*;"
 /TGEnd
+/TGBegin "Class"
+/TGFindStr = "^[\t ]*class\s+(\w+)(?:\s+extends\s+(\w+))?"
+/TGEnd
 /TGBegin "Functions"
 /TGFindStr = "^[\t ]*(?:(?:abstract|final|private|protected|public|static)[\t ]+)*function[\t ]+([a-z_\x7f-\xff][0-9a-z_\x7f-\xff]*)"
 /TGBegin "Parameters"
