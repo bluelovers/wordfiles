@@ -2,7 +2,13 @@
 /Delimiters = ~!@$%^&*()+=|\/{}[]:;"'<> 	,.?\`/
 /Regexp Type = Perl
 /TGBegin "Use Declarations"
-/TGFindStr = "^[ \t]*use[ \t]+([a-z0-9_:]+)"
+/TGFindStr = "^[ \t]*use[ \t]+((?!constant)[a-z0-9_:]+)"
+/TGEnd
+/TGBegin "Const"
+/TGFindStr = "^\s*use\s+constant\s+([\w]+)\s*=>"
+/TGEnd
+/TGBegin "Globl Variables"
+/TGFindStr = "^\s*our\s+([\$%@\*][\w]+)\s*"
 /TGEnd
 /TGBegin "Subs"
 /TGFindStr = "^[ \t]*sub[ \t]+([a-z0-9_]+)"
