@@ -1,0 +1,15 @@
+# git-Lazy ignore-on-commit Script!!
+
+c_cplusplus-tpl.xml
+csharp-tpl.xml
+css-tpl.xml
+html-tpl.xml
+java-tpl.xml
+javascript-tpl.xml
+mysql-tpl.xml
+perl-tpl.xml
+php-tpl.xml
+python-tpl.xml
+ruby-tpl.xml
+vbscript-tpl.xml
+visualbasic-tpl.xml
