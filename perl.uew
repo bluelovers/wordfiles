@@ -16,11 +16,14 @@
 /TGBegin "EXPORT"
 /TGFindStr = "^\s*(@EXPORT(?:_OK)?)\s+"
 /TGEnd
-/TGBegin "Globl Variables"
-/TGFindStr = "^\s*our\s+([\$%@\*][\w]+)\s*"
-/TGEnd
 /TGBegin "Subs"
 /TGFindStr = "^[ \t]*sub[ \t]+([a-z0-9_]+)"
+/TGEnd
+/TGBegin "Label"
+/TGFindStr = "^[ \t]*(\w+):(?!:)"
+/TGEnd
+/TGBegin "Globl Variables"
+/TGFindStr = "^\s*our\s+([\$%@\*][\w]+)\s*"
 /TGEnd
 /Indent Strings = "{"
 /Unindent Strings = "}"
