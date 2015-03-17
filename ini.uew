@@ -1,4 +1,4 @@
-/L20"INI Files" Nocase Line Comment = ; String Chars = "' File Extensions = INI DAT INF PRJ PUI
+/L20"INI Files" Nocase Line Comment = ; String Chars = "' File Extensions = INI DAT INF PRJ PUI TGITCONFIG GITCONFIG CONFIG
 /Colors = 0,8421376,8421376,8421504,255,
 /Colors Back = 16777215,16777215,16777215,16777215,16777215,
 /Colors Auto Back = 1,1,1,1,1,
