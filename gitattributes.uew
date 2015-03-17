@@ -1,0 +1,14 @@
+/L20"GIT" String Chars = " Line Comment = # Escape Char = \ File Extensions = GITATTRIBUTES
+/Delimiters = =*.
+/C1"Keywords"
+text
+eol
+crlf
+binary
+auto
+-text
+lf
+/C2"Operators"
+=
+*
+.
