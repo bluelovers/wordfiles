@@ -1,0 +1,3 @@
+
+*.ini text eol=crlf
+*.uew text eol=crlf
