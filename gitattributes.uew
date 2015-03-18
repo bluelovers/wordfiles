@@ -1,14 +1,24 @@
-/L20"GIT" String Chars = " Line Comment = # Escape Char = \ File Extensions = GITATTRIBUTES
+/L20"Git Attributes" String Chars = " Line Comment = # Escape Char = \ File Extensions = GITATTRIBUTES
 /Delimiters = =*.
 /C1"Keywords"
-text
-eol
 crlf
-binary
 auto
--text
 lf
+indent
+ours
+dater
+exif
+word
 /C2"Operators"
 =
 *
 .
+/C3"Keywords"
+text
+eol
+binary
+-text
+merge
+filter
+ident
+diff
