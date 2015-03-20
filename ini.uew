@@ -14,9 +14,23 @@
 /C2"Separators" Colors = 255 Colors Back = 16777215 Colors Auto Back = 1 Font Style = 0
 ,
 -
-=/C3"Variables"
+\\ \ /
+/C3"Variables" STYLE_KEYWORD
 %
-/C4"Operators" STYLE_OPERATOR
+:
+@
+/C4"Operators" STYLE_KEYWORD
 =
 "
 '
+/C5"Variables" STYLE_KEYWORD
+PAL
+PackagePartialDir
+DoubleBackslash
+DataDir
+PortableAppsBaseDir
+LastPortableAppsBaseDir
+LastDrive
+Drive
+APPDATA
+AppDir
