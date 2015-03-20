@@ -1,4 +1,7 @@
 /L3"HTML" HTML_LANG Nocase Noquote Block Comment On = <!-- Block Comment Off = --> Block Comment On Alt = <% Block Comment Off Alt = %> String Chars = "' File Extensions = HTM HTML SHTML HTT HTA HTX CFM JSP PHP PHTML ASP TMPL ASAX ASHX ASMX ASPX ASCX
+/TGBegin ""
+/TGFindStr = "<(html|head|body)[\s>]"
+/TGEnd
 /TGBegin "External Links"
 /TGFindStr = "<a\s[^>]*\<href=["']([^"'#].*?)["']"
 /TGEnd
@@ -39,36 +42,36 @@
 /Open Brace Strings =  "{" "(" "[" "<"
 /Close Brace Strings = "}" ")" "]" ">"
 /C1"Tags" STYLE_TAG
-<a </a> <abbr> <abbr </abbr> <above> <address> <address </address> <area </area <array> <article> 
+<a </a> <abbr> <abbr </abbr> <above> <address> <address </address> <area </area <array> <article>
 <article </article> <aside> <aside </aside> <audio> <audio </audio>
-<b> <b </b> <base <bdo> <bdo </bdo> <bgsound <blink> <blink </blink> <blockquote> <blockquote 
+<b> <b </b> <base <bdo> <bdo </bdo> <bgsound <blink> <blink </blink> <blockquote> <blockquote
 </blockquote> <body> <body </body> <box> <br/> <br> <br <button> </button>
-<canvas> <canvas </canvas> <caption> <caption </caption> <cite> <cite </cite> <code> <code </code> 
+<canvas> <canvas </canvas> <caption> <caption </caption> <cite> <cite </cite> <code> <code </code>
 <col> <col <colgroup> <colgroup </colgroup> <command> <command </command> <comment> </comment>
-<datalist> <datalist </datalist> <dd> <dd </dd> <del> <del </del> <details> <details </details> 
+<datalist> <datalist </datalist> <dd> <dd </dd> <del> <del </del> <details> <details </details>
 <dfn> <dfn </dfn> <div> <div </div> <dl> <dl </dl> <dt> <dt </dt>
 <em> <em </em> <embed
-<fieldset> <fieldset </fieldset> <fig> <figcaption> <figcaption </figcaption> <figure> <figure 
+<fieldset> <fieldset </fieldset> <fig> <figcaption> <figcaption </figcaption> <figure> <figure
 </figure> <footer> <footer </footer> <form> <form </form>
-<h1> <h1 </h1> <h2> <h2 </h2> <h3> <h3 </h3> <h4> <h4 </h4> <h5> <h5 </h5> <h6> <h6 </h6> <head> 
+<h1> <h1 </h1> <h2> <h2 </h2> <h3> <h3 </h3> <h4> <h4 </h4> <h5> <h5 </h5> <h6> <h6 </h6> <head>
 <head </head> <header> <header </header> <hgroup> <hgroup </hgroup> <hr/> <hr> <hr <html> <html </html>
 <i> <i </i> <iframe> <iframe </iframe> <ilayer> </ilayer> <img <input> <input <ins> <ins </ins>
 <kbd> <kbd </kbd> <keygen
-<label> <label </label> <layer> <layer </layer> <legend> <legend </legend> <li> <li </li> <link 
+<label> <label </label> <layer> <layer </layer> <legend> <legend </legend> <li> <li </li> <link
 <listing> </listing>
-<map </map> <mark> <mark </mark> <marquee </marquee> <menu> <menu </menu> <meta <meter> <meter 
+<map </map> <mark> <mark </mark> <marquee </marquee> <menu> <menu </menu> <meta <meter> <meter
 </meter> <multicol> </multicol>
 <nav> <nav </nav> <nextid <nobr> </nobr> <nolayer> </nolayer> <noscript> </noscript> <note> </note>
-<object> <object </object> <ol> <ol </ol> <optgroup> <optgroup </optgroup> <option> <option </option> 
+<object> <object </object> <ol> <ol </ol> <optgroup> <optgroup </optgroup> <option> <option </option>
 <output> <output </output>
 <p> <p </p> <param <pre> <pre </pre> <progress> <progress </progress>
 <q> <q </q> <quote>
 <range> <root> <rp> <rp </rp> <rt> <rt </rt> <ruby> <ruby </ruby>
-<samp> <samp </samp> <script> <script </script> <section> <section </section> <select> <select </select> 
-<small> <small </small> <sound <source> <source </source> <spacer> <span> <span </span> <sqrt> <strong> 
-<strong </strong> <style> <style </style> <sub> <sub </sub> <summary> <summary </summary> <sup> <sup </sup> 
-<table> <table </table> <tbody> <tbody </tbody> <td> <td </td> <text> <textarea> <textarea </textarea> 
-<tfoot> <tfoot </tfoot> <th> <th </th> <thead> <thead </thead> <time> <time </time> <title> </title> <tr> 
+<samp> <samp </samp> <script> <script </script> <section> <section </section> <select> <select </select>
+<small> <small </small> <sound <source> <source </source> <spacer> <span> <span </span> <sqrt> <strong>
+<strong </strong> <style> <style </style> <sub> <sub </sub> <summary> <summary </summary> <sup> <sup </sup>
+<table> <table </table> <tbody> <tbody </tbody> <td> <td </td> <text> <textarea> <textarea </textarea>
+<tfoot> <tfoot </tfoot> <th> <th </th> <thead> <thead </thead> <time> <time </time> <title> </title> <tr>
 <tr </tr>
 <ul> <ul </ul>
 <var> <var </var> <video> <video </video>
@@ -89,7 +92,7 @@ keytype= kind=
 label= lang= language= link= list= longdesc= loop= low=
 mailto= manifest= marginheight= marginwidth= max maxlength= media= method= min month= multiple multiple>
 name= nohref nohref> noresize noresize> noshade noshade> novalidate= nowrap nowrap> number=
-object= onabort= onbeforeunload= onblur= oncanplay= oncanplaythrough= onchange= onclick= oncontextmenu= ondblclick= ondrag= ondragend= ondragenter= ondragleave= ondragover= ondragstart= ondrop= ondurationchange= onemptied= onended= onerror= onerror= onfocus= onformchange= onforminput= onhashchange= oninput= oninvalid= onkeydown= onkeypress= onkeyup= onload= onloadeddata= onloadedmetadata= onloadstart= onmessage= onmousedown= onmousemove= onmouseout= onmouseover= onmouseup= onmousewheel= onoffline= ononline= onpagehide= onpageshow= onpause= onplay= onplaying= onpopstate= onprogress= onratechange= onreadystatechange= onreset= onresize= onscroll= onseeked= onseeking= onselect= onshow= onstalled= onstorage= onsubmit= onsuspend= ontimeupdate= onunload= onvolumechange= onwaiting= open= optimum= 
+object= onabort= onbeforeunload= onblur= oncanplay= oncanplaythrough= onchange= onclick= oncontextmenu= ondblclick= ondrag= ondragend= ondragenter= ondragleave= ondragover= ondragstart= ondrop= ondurationchange= onemptied= onended= onerror= onerror= onfocus= onformchange= onforminput= onhashchange= oninput= oninvalid= onkeydown= onkeypress= onkeyup= onload= onloadeddata= onloadedmetadata= onloadstart= onmessage= onmousedown= onmousemove= onmouseout= onmouseover= onmouseup= onmousewheel= onoffline= ononline= onpagehide= onpageshow= onpause= onplay= onplaying= onpopstate= onprogress= onratechange= onreadystatechange= onreset= onresize= onscroll= onseeked= onseeking= onselect= onshow= onstalled= onstorage= onsubmit= onsuspend= ontimeupdate= onunload= onvolumechange= onwaiting= open= optimum=
 pattern ping= placeholder= poster= preload= profile= prompt=
 radiogroup= range= readonly readonly> rel= required= rev= reversed= role= rows= rowspan= rules=
 sandbox= scheme= scope= scoped= scrolling= seamless= search= selected selected> shape= size= sizes= span= src= srcdoc= spellcheck= standby= start= step srclang= style= summary=
