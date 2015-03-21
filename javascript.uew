@@ -17,9 +17,9 @@
 /TGFindStr = "^[ \t]*(get|set)[ \t]+(\w+[ \t]*)\(.*\)"
 /TGEnd
 /TGBegin "Object Method"
-/TGFindStr = "^[ \t]*(\w+[ \t]*):[ \t]*function[ \t]*\([^\)]*\)"
+/TGFindStr = "^[ \t]*(\w+)[ \t]*:[ \t]*function[ \t]*\([^\)]*\)"
 /TGFindStr = "^[ \t]*(?:([\w \t\.\[\]]+)[ \t]*[:][ \t]*){1,5}function[ \t]*\([^\)]*\)"
-/TGFindStr = "^[ \t]*(\w+[ \t]*)\([^\)]*\):[ \t]*(?!function).*"
+/TGFindStr = "^[ \t]*(\w+[ \t]*)\([^\)]*\)[ \t]*:[ \t]*(?!function).*"
 /TGBegin "Parameters"
 /TGFindStr = "[ \t\n]*([^,]+)"
 /TGFindBStart = "\("
